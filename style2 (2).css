@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+    
+    /* display: inline-block; */
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar{
+    /* position: fixed; */
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 0 20px;
+    /*display:flex;*/
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    display:none;
+}
+svg {
+    width: 5.5rem;
+    margin-top: -10px;
+    
+}
+.logo{
+    transition: transform 0.2s ease-in-out;
+}
+.logo:hover {
+    animation: pulse 1s infinite; /* Apply the pulse animation on hover */
+}
+.navlinks a {
+    position: relative;
+    font-size: 18px;
+    color:white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navlinks a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+}
+.navlinks a:hover::before{
+    width: 100%;
+} 
+
+.card {
+    height:20px;
+    margin-left: 1100px;
+    margin-top: 12%;
+    max-width: 300px; /* Adjust the width as needed */
+    
+}
+
+
+.div-photo{
+    border-radius: 50%;
+    
+}
+
+.header2 {
+    margin:auto auto;
+    height: auto;
+    /* display: block; */
+    /* margin-top: 500px; */
+    /* width:50%; */
+    font-size: 30px;
+    color:white;
+}
+
+.header-text {
+    width: 45%;
+    float: left;
+}
+
+.header-photo {
+    width: 45%;
+    float: right;
+}
+
+.header-photo img {
+    width: 75%;
+}
+
+/* .header-text{
+    margin:auto auto;
+    width:50%;
+    font-size: 30px;
+    color:white;
+} */
+
+/* .header-text {
+    float: left;
+}
+
+.header-photo {
+    /* width: 15%; */
+    /* float: right; */
+/* } */
+
+/* .header-photo img { */
+    /* width: 50%; */
+/* } */
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    color:white;
+}
+.header-text h1 span{
+    color:blueviolet
+}
+
+.triangle {
+    margin-top: 45px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    clip-path: polygon(0% 0%, 50% 50%, 100% 0%);
+    transition: all 0.5s ease;
+}
+.triangle:hover {
+    transform: translateY(20%);
+    background: blueviolet;
+}
+
+.triangle-up:hover {
+    transform: translateY(-20%);
+    background: blueviolet;
+}
+.container {
+    width: 100vw;
+    height: auto;
+    /* margin: auto auto; */
+    margin: auto 50%;
+    border: 1px solid #000; /* Adding a border for visual separation */
+}
+.text-yes{
+    color:white;
+}
+
+
+
+.div-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+    /* text-align: center; */
+    transition: all 2s;
+    color:#fff;
+
+}
+.div-container p{
+    font-size: 30px;
+}
+
+.div-photo {
+    width: 28rem;
+    /* object-fit: cover; */
+    height:28rem;
+    margin: 0 10px;
+    transition: 0.5s ease-in-out;
+    /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgb(0, 0, 0); */
+}
+.div-photo:hover{
+    transform: translateY(20px);
+}
+.div-photo-about {
+    width: 28rem;
+    /* object-fit: cover; */
+    height:28rem;
+    margin: 10px 25px;
+    transition: 0.5s ease-in-out;
+    border-radius: 100%;
+    margin-top: 100px;
+    /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgb(0, 0, 0); */
+}
+.div-photo-about:hover{
+    transform: translateY(20px);
+}
+
+
+.div-text {
+    width: 28rem;
+    z-index: 0;
+    height: 34rem;
+    margin: 0 10px;
+    /* margin-right: -10%; */
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+.div-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    color:white;
+}
+.div-text h1 span{
+    color:blueviolet;
+}
+
+  
+
+  .div-text p span{
+          animation: rainbow 2.5s linear;
+          animation-iteration-count: infinite;
+  }
+  
+  
+  
+  
+  
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: transparent;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#aboutme{
+    margin-top: 40px;
+
+}
+
+#aboutme p{
+    text-align: left;
+    font-size: 24px;
+}
+
+
+/* NEW */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: auto auto;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: 120px;
+}
+    
+.card{
+    text-align: center;
+    transition: 0.5s ease-out;
+    width: 30%;
+    height: 25rem;
+    margin: 12px;
+    background-color: rgb(101, 190, 235);
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+.card img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+.card:hover {
+    transform: translateY(5px);
+}
+.card:hover:before {
+    opacity: 1;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgb(189, 5, 250,0.6) ;
+    transition: 0.5s;
+    opacity: 0;
+}
+.card-info {
+    z-index: 3;
+    overflow :hidden;
+    color: white;
+    opacity: 1;
+    /* transform: translateY(0px); */
+    transition: 0.5s;
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin: auto auto;
+}
+
+.card-info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+/*.card-info:hover {
+    opacity: 1;
+    /* transform: translateY(0px); 
+}*/
+.card-info button {
+    padding: 0.6rem;
+    margin-top: 50px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.card-info button:hover {
+    background: dodgerblue;
+    color: white;
+}
+
+.card:hover .card-info {
+    display: block;
+}
+
+.slider-padding {
+    
+    /* height: 100%; */
+}
+
+.slider{
+    /*  */
+    /*  */
+    position: relative;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+.item{
+    position: absolute;
+    
+    /* width: 200px; */
+    height: 320px;
+    text-align: justify;
+    background-color: transparent;
+    border-radius: 10px;
+    /* padding: 20px; */
+    transition: 0.5s;
+    /* left: calc(37.5%); */
+    top: 0;
+}
+
+.item img {
+    /* width: 100%; */
+    /* padding: 20px; */
+    height: 100%;
+    object-fit: cover;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 400px;
+    cursor: pointer;
+    z-index: 1000;
+}
+#next{
+    left: unset;
+    right: 400px;
+}
+
+@keyframes rainbow{
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+    }
+}

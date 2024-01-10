@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">\
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="moduleappcss.css">
+  <link rel="stylesheet" href="navbar.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
+  <script src="portfolio-work.js"></script>
+  <title>Details Page</title>
+    <!-- Bootstrap CSS -->
+  <script>
+      window.onload = function() {
+            document.getElementById("navbar").style.display = "flex"
+      }
+  </script>
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="logo">
+        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #ed1c24;
+                }
+          
+                .cls-1, .cls-2, .cls-3 {
+                  stroke-width: 0px;
+                }
+          
+                .cls-2 {
+                  fill: #00a651;
+                }
+          
+                .cls-3 {
+                  fill: #fbb040;
+                }
+              </style>
+            </defs>
+            <g>
+              <path class="cls-2" d="m32.61,56.56s0,1.31,3.94,6.57c0,0,3.94,2.63,5.25,5.25s3.94,15.76,3.94,15.76c0,0,3.94,2.63,5.25,2.63s5.25-2.63,5.25-2.63l2.63-15.76s1.31-2.63,2.63-2.63,5.25-3.94,5.25-3.94l2.63-3.94s1.31,1.31-1.31,5.25l5.25-1.31s5.25-5.25,6.57-7.88c0,0-1.31,6.57-5.25,10.51,0,0-10.51,1.31-11.82,5.25s-3.94,15.76-3.94,15.76c0,0-1.31,3.94-7.88,5.25"/>
+              <path class="cls-2" d="m51,90.71s-3.94,0-7.88-3.94l-3.94-17.08s0-2.63-5.25-3.94-6.57-1.31-6.57-1.31l-6.57-10.51s5.25,6.57,7.88,7.88,5.25,1.31,5.25,1.31c0,0-2.54-4.83-1.27-6.35"/>
+            </g>
+            <path class="cls-2" d="m31.9,55.9c.6-.66-.6-3.28-3.23-7.8s0-12.56,0-12.56c0,0,2.4,7.22,7.11,10.18,0,0-3.17-7.55-3.17-8.87,0,0,6.57,7.88,13.13,11.82,0,0,5.25,2.63,2.63,7.88,0,0,0-6.57-9.19-9.19,0,0,4.11,5.25,2.05,9.19,0,0-.74-6.57-4.68-7.88s-5.25-3.94-5.25-3.94c0,0,1.54,6.57.77,11.16"/>
+            <path class="cls-2" d="m53,56.56s-.68-3.94.63-5.25,14.45-10.51,14.45-13.13c0,0,1.31,3.94-2.63,7.88,0,0,6.43-5.25,7.81-10.51,0,0,2.7,5.25.07,11.82-2.63,6.57-3.02,5.25-3.48,8.54,0,0,3.48-15.1.85-11.16-2.63,3.94-8.1,2.63-9.96,11.82,0,0-.54-5.25.77-7.88s-6.57,2.63-6.57,2.63c0,0-2.57,2.63-1.94,5.25Z"/>
+            <path class="cls-2" d="m70.7,60.5c0-5.25,3.94-11.82,3.94-11.82,0,0,3.94-3.94,9.19-3.94,0,0-10.51,7.88-13.13,15.76"/>
+            <path class="cls-2" d="m18.16,44.74s7.88,1.31,9.19,3.94,5.25,9.19,3.94,11.82c0,0-7.88-14.45-13.13-15.76Z"/>
+            <path class="cls-1" d="m38.95,62.85c0-2.94-2.63-6.57-2.63-6.57,0,0,5.25,1.31,7.88,5.25s2.63,6.57,2.63,6.57c0,0-7.88-3.94-7.88-5.25Z"/>
+            <path class="cls-1" d="m65.22,56.28s-5.25,2.63-6.57,3.94-3.94,7.88-3.94,7.88c0,0,2.63-2.63,5.25-3.94s5.25-7.88,5.25-7.88"/>
+            <polyline class="cls-2" points="50.77 61.54 52.08 58.91 50.77 56.28 49.45 58.91 50.77 61.54"/>
+            <path class="cls-3" d="m44.2,24.76s5.25,17.08,3.94,21.02c0,0-5.25-3.94-7.88-6.57v-1.31s-13.13-5.25-18.39-28.9c0,0,11.82,23.64,21.02,27.58v2.63l2.63,1.31-1.31-15.76Z"/>
+            <path class="cls-3" d="m57.34,24.76s-5.25,13.13-3.94,21.02c0,0,3.94-2.63,7.88-6.57v-2.63s11.82-2.63,18.39-27.58c0,0-10.51,22.33-22.33,27.58v2.63l-1.31,1.31,1.31-15.76Z"/>
+          </svg>
+        </div>
+        <nav class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <div class="animation start-home"></div>
+      </nav>
+    </header>
+    <div class="container mt-5" id="descriptions">
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- Rectangle box displaying a photo -->
+                <div class="card border-0">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" id="yessir">
+                <div class="card border-0">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br></br>
+    <div class="container mt-5" id="skills">
+        <div class="row">
+            <div class="col-sm-6 ">
+
+                <div class="Skills" id="icon-container">
+
+                </div>
+                <!-- Rectangle box displaying a photo -->
+                
+            </div>
+            <div class="col-sm-2">
+              <div class="gallery" id="gallery">
+               
+                
+              </div>
+              <!-- Rectangle box displaying a photo -->
+              
+          </div>
+          
+        </div>
+    </div>
+<!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+

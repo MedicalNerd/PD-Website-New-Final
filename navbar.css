@@ -1,0 +1,132 @@
+.navbar{
+    /* position: fixed; */
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 0 20px;
+    /*display:flex;*/
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    display:none;
+}
+svg {
+    width: 5.5rem;
+    margin-top: -10px;
+    
+}
+.logo{
+    transition: transform 0.2s ease-in-out;
+}
+.logo:hover {
+    animation: pulse 1s infinite; /* Apply the pulse animation on hover */
+}
+.navlinks a {
+    position: relative;
+    font-size: 18px;
+    color:white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navlinks a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+}
+.navlinks a:hover::before{
+    width: 100%;
+} 
+@media only screen and (max-width: 768px) {
+    .div-container {
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    button[type="submit"] {
+        /* display: inline-flex; */
+        width: 100%;
+
+    }
+
+    #about {
+        float: none;
+        /* width: 100%; */
+        flex-wrap: nowrap;
+    }
+
+    #about .div-text {
+        /* width: 100%; */
+    }
+
+    .div-photo {
+        width: 75%;
+        height: 75%;
+        /* margin- */
+        float: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }    
+
+    .div-text {
+        text-align: center;
+        width: 75%;
+        
+    }
+
+    #aboutme p {
+        text-align: center;
+    }
+
+    .div-text h1 {
+        font-size: 50px;
+    }
+
+    .div-text a button {
+        font-size: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .navbar .logo {
+        margin-top: 10px;
+    }
+
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navlinks a {
+        color: green;
+        margin-left: 0;
+        padding: 10px;
+        border-top: 2px solid green;
+        width: 100%;
+    }
+
+    .navlinks a:nth-child(1) {
+        border-top: none;
+    }
+
+    .footerNav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
